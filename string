@@ -1,0 +1,26 @@
+Write two functions:
+
+1.to_int() : A function to convert a string to an integer.
+def int(a):  
+    a =str(input("enter letter: "))
+    int =type(a)
+    print(int)
+
+int('')
+
+output
+enter letter: j
+<class 'str'>
+
+2.to_str() : A function to convert an integer to a string.
+
+def str(a):
+    a=int(input("enter a number"))
+    str =type(a)
+    print(str)
+
+str('')
+
+output
+enter a number5
+<class 'int'>
