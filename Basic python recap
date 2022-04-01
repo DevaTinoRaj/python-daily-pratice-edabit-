@@ -1,0 +1,231 @@
+#syndex
+print('hello')
+print('Welcome to Python !2')
+print('Welcome to Python !')
+
+output:
+print('hello')
+print('Welcome to Python !2')
+print('Welcome to Python !')
+
+
+################################################################################ variable
+failed_subjects="2"
+name='John'
+print('Dear Mrs Badger')
+print('Your son ' + name + ' is failing ' + failed_subjects + ' subjects.')
+print(name + '  will need to redo ' + failed_subjects + '  courses.')
+name="Eric"
+print(name + '  is doing well in geography.')
+
+output:
+Dear Mrs Badger
+Your son John is failing 2 subjects.
+John  will need to redo 2  courses.
+Eric  is doing well in geography.
+
+
+################################################################################ datatype
+
+#integer
+#float
+#boolean
+
+failed_subjects=2
+name='John'
+print('Dear Mrs Badger')
+print('Your son ' + name + ' is failing ' + str(failed_subjects) + ' subjects.')
+print(name + '  will need to redo ' + str(failed_subjects) + '  courses.')
+name="Eric"
+print(name + '  is doing well in geography.')
+print(type('hello'))
+print(type(1))
+print(type(1.64))
+print(type(True))
+
+output:
+Dear Mrs Badger
+Your son John is failing 2 subjects.
+John  will need to redo 2  courses.
+Eric  is doing well in geography.
+<class 'str'>
+<class 'int'>
+<class 'float'>
+<class 'bool'>
+
+#################################################################################
+#Create appropriate Variables for Item name, the price 
+and how many you have in stock?
+
+item_name = 'widget'
+price = 23.5
+inventory = 100
+is_in_inventory = True
+print(item_name, price, inventory)
+
+output:
+widget 23.5 100
+
+ ####################################################################### arithmetic
+a=6
+b=2
+print('Addition : ', a + b)
+print('Subtraction : ', a - b)
+print('Multiplication : ', a * b)
+print('Division (float) : ', a / b)
+print('Division (floor) : ', a // b)
+print('Modulus : ', a % b)
+print('Exponent : ', a ** b)
+
+output:
+Addition :  8
+Subtraction :  4
+Multiplication :  12
+Division (float) :  3.0
+Division (floor) :  3
+Modulus :  0
+Exponent :  36
+
+###################################################################### string
+
+msg='welcome to it\'s Python: Strings'
+print(msg)
+print(msg.upper())
+print(msg.lower())
+print(msg.capitalize())
+msg='welcome to Python: Strings'
+print(msg)
+print(len(msg))
+print(msg.count('o'))
+print(msg.title())
+
+output:
+welcome to it's Python: Strings
+WELCOME TO IT'S PYTHON: STRINGS
+welcome to it's python: strings
+Welcome to it's python: strings
+welcome to Python: Strings
+26
+3
+Welcome To Python: Strings
+
+
+#########################################################################slicing
+
+msg='welcome to Python 101: Strings'
+    
+print(msg)
+print(msg[-4])
+
+output:
+welcome to Python 101: Strings
+i
+
+
+
+######EXERCISE USING STRING###### 
+
+from the string "welcome to python 101:string",extract text and create/print a new string that says 
+*"  Welcome Ring To Tyler"
+*Every firstletter in the word show be capitalized(title format)
+print the same string backward ?
+
+
+msg='welcome to Python 101: Strings'
+msg1=msg[18]+' '+msg[:8]+msg[25:29]+msg[7:11]+msg[13]+msg[12]+msg[2]+msg[1]+msg[-5] 
+print(msg1.title())
+print(msg1[::-1])
+
+output:
+1 Welcome Ring To Tyler
+relyt ot gnir emoclew 1
+
+#######################################################################multiline string
+msg="""Dear Terry,,
+You must cut down the mightiest 
+tree in the forest with…
+a herring! <3"""
+print(msg)
+
+output:
+Dear Terry,,
+You must cut down the mightiest
+tree in the forest with…
+a herring! <3
+
+
+#########################################################################find
+msg='Welcome to Python 101: Strings'
+print(msg.find('1'))
+
+output:
+18
+
+##########################################################################replace
+msg='Welcome to Python 101: Strings'
+print(msg.replace('Python','Java'))
+
+output:
+Welcome to Java 101: Strings
+
+#############################################################################To check 
+msg='Welcome to Python 101: Strings'
+print('Python' in msg)
+
+output:
+True
+
+################################################################################string formating
+name='TERRY'
+color = 'RED'
+msg = '[' + name + '] loves the color ' + color.lower() + '!'
+msg1 = f'[{name}] loves the color {color.lower()}!'
+print(msg)
+print(msg1)
+
+output:
+[TERRY] loves the color red!
+[TERRY] loves the color red!
+
+#############################################################################user input
+name= input('What is your name?: ')
+age=input('What is your age?: ')
+print('Hello '+ name + '! You are '+ age + ' years old.')
+
+output
+What is your name?: Tino
+What is your age?: 29
+Hello Tino! You are 29 years old.
+
+########eg
+
+num1=input('Enter a digit: ')
+num2=input('Enter a second number:')
+answer=float(num1)+float(num2)
+print(answer)
+
+output
+Enter a digit: 5
+Enter a second number:11
+16.0
+
+
+###################################################################################
+#distance converting to km to miles
+take tow input and distance
+in km?
+print greet user by name and show km and mile value?
+
+
+name = input('Enter your name: ')
+distance_km = input('Enter distance in km: ')
+distance_mi = float(distance_km)/1.609
+print(f'Hi {name.title()}! {distance_km}km is equivalent to {round(distance_mi,1)} miles.')
+
+output:
+Enter your name: Tino
+Enter distance in km: 5
+Hi Tino! 5km is equivalent to 3.1 miles.
+
+
+
