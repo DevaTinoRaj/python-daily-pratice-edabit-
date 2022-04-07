@@ -228,4 +228,81 @@ Enter distance in km: 5
 Hi Tino! 5km is equivalent to 3.1 miles.
 
 
+###################################################################################
+
+a=7
+b=3
+print('a == b is', a == b)
+print('a != b is', a != b)
+print('a > b is', a > b)
+print('a < b is', a < b)
+print('a >= b is', a >= b)
+print('a <= b is', a <= b)
+print('o in John is ','o' in 'John') #membership
+print('o in John is ','o' not in 'John') #non membership
+print('John is John ','John' is 'John') #identity
+print('John is not John is ','John' is not 'John') # negative identit
+
+
+output
+print('John is not John is ','John' is not 'John') # negative identit
+a == b is False
+a != b is True
+a > b is True
+a < b is False
+a >= b is True
+a <= b is False
+o in John is  True
+o in John is  False
+John is John  True
+John is not John is  False
+
+
+########################################################################################
+ Create a calculator which handles +,-,*,/ and outputs answer based on the mode/ operator used
+# Hint: use 3 separate inputs 
+
+mode = input('Enter math operation(+,-,*,/): ')
+num1 = int(input('Enter first number: '))
+num2 = int(input('Enter second number: '))
+
+if mode == '+':
+    print(f'Answer is: {num1 + num2}')
+elif mode == '-':
+    print(f'Answer is: {num1 - num2}')
+elif mode == '*':
+    print(f'Answer is: {num1 * num2}')
+elif mode == '/':
+    print(f'Answer is: {num1 / num2}')
+else:
+    print('Input error!')
+
+output
+Enter math operation(+,-,*,/): +
+Enter first number: 12
+Enter second number: 12
+Answer is: 24
+
+
+#############################################################################################
+Extend functionality with extra mode so it also does celsius to fahrenheit conversion
+# formula is: temp in C*9/5 + 32 = temp in f
+
+
+
+mode = input('f for Celsius to Fahrenheit conversion: ')
+num1 = float(input('Enter first number: '))
+if mode.lower() == 'f':
+    print(f'{num1} Celsius is equivalent to {(num1*9/5)+32 } fahrenheit')
+else:
+        print('Input error!')
+        
+output
+f for Celsius to Fahrenheit conversion: f
+Enter first number: 28
+28.0 Celsius is equivalent to 82.4 fahrenheit
+
+
+###################################################################################################
+
 
