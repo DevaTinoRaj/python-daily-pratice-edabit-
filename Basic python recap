@@ -305,4 +305,18 @@ Enter first number: 28
 
 ###################################################################################################
 
+slicing 
+
+
+
+x= "deva tino raj"
+
+print(x[:6:])
+print(type(x))
+print(len(x))
+
+output:
+deva t
+<class 'str'>
+13
 
